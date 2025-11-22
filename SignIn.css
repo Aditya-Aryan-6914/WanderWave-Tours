@@ -1,0 +1,30 @@
+:root{
+    --accent:#0B6973;
+    --accent-2:#FF7A59;
+    --glass: rgba(255,255,255,0.88);
+    --text:#052B2B;
+}
+
+body{
+    background-image: url("/images/pexels-pixabay-259915.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Poppins', Arial, sans-serif;
+    color:var(--text);
+}
+.container{
+    width: 50%;
+    margin: auto;
+    background-color: var(--glass);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(3, 22, 22, 0.12);
+}
+
+input[type="submit"]{
+    background: linear-gradient(90deg,var(--accent),var(--accent-2));
+    color: #fff;padding:10px 16px;border:none;border-radius:6px;cursor:pointer
+}
+
+input[type="reset"]{background:#f0f0f0;padding:10px 14px;border-radius:6px;border:1px solid #e0e0e0}

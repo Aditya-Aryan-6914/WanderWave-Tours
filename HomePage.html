@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WanderWave Tours — Explore Beautiful Places</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="HomePage.css">
+</head>
+<body class="page-fade-in">
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">Wander<span>Wave</span></div>
+            <nav class="main-nav">
+                <a href="#">Home</a>
+                <a href="#destinations">Destinations</a>
+                <a href="#tours">Tours</a>
+                <a href="#about">About</a>
+                <a href="SignIn.html" class="btn sign-in fade-link">Sign In</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-slider">
+            <div class="slides">
+                <div class="slide slide-1">
+                    <div class="overlay"></div>
+                    <div class="slide-content">
+                        <h1>Discover Stunning Landscapes</h1>
+                        <p>Handpicked tours, local guides, unforgettable memories.</p>
+                        <a href="SignIn.html" class="cta btn fade-link">Join Now</a>
+                    </div>
+                </div>
+
+                <div class="slide slide-2">
+                    <div class="overlay"></div>
+                    <div class="slide-content">
+                        <h1>City Breaks & Cultural Trips</h1>
+                        <p>Explore cities with curated experiences and great value.</p>
+                        <a href="SignIn.html" class="cta btn fade-link">Get Started</a>
+                    </div>
+                </div>
+
+                <div class="slide slide-3">
+                    <div class="overlay"></div>
+                    <div class="slide-content">
+                        <h1>Relax, Recharge, Repeat</h1>
+                        <p>Perfect beach getaways and serene escapes.</p>
+                        <a href="SignIn.html" class="cta btn fade-link">Plan a Trip</a>
+                    </div>
+                </div>
+
+                <div class="slide slide-4">
+                    <div class="overlay"></div>
+                    <div class="slide-content">
+                        <h1>Adventure Awaits</h1>
+                        <p>From hikes to roadtrips — curated adventures for every traveler.</p>
+                        <a href="SignIn.html" class="cta btn fade-link">Explore Tours</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="destinations" class="features container">
+            <h2>Popular Destinations</h2>
+            <div class="cards">
+                <div class="card">
+                    <div class="card-visual" aria-hidden="true"></div>
+                    <h3>Mountains</h3>
+                </div>
+                <div class="card">
+                    <div class="card-visual" aria-hidden="true"></div>
+                    <h3>Beaches</h3>
+                </div>
+                <div class="card">
+                    <div class="card-visual" aria-hidden="true"></div>
+                    <h3>Historic Cities</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="foot-left">
+                <div class="brand small">Wander<span>Wave</span></div>
+                <p>Explore the world with thoughtful trips, small groups, and expert local guides.</p>
+            </div>
+            <div class="foot-right">
+                <h4>Contact</h4>
+                <p>Email: hello@wanderwave.example</p>
+                <p>Phone: +91 12345 67890</p>
+            </div>
+        </div>
+        <div class="legal">© <span id="year"></span> WanderWave Tours — All rights reserved.</div>
+    </footer>
+
+    <script>
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Add fade-out transition when navigating to SignIn page
+        document.querySelectorAll('.fade-link').forEach(function(el){
+            el.addEventListener('click', function(e){
+                // Only intercept same-origin links
+                var href = el.getAttribute('href');
+                if (!href || href.startsWith('#') || href.startsWith('mailto:')) return;
+                e.preventDefault();
+                document.body.classList.add('page-fade-out');
+                setTimeout(function(){ window.location = href; }, 500);
+            });
+        });
+    </script>
+</body>
+</html>

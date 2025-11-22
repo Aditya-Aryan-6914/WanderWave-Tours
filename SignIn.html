@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="SignIn.css">
+    <title>Plan your Trip with us</title>
+</head>
+<body>
+    <div class="container">
+        <fieldset>
+            <legend><h1>Plan your Trip with us</h1></legend>
+            <form action="index.php" method="post">
+                <table>
+                    <marquee behavior="scroll" direction="left" scrollamount="5">*😊Please fill all the details carefully*</marquee>
+                <tr>
+                    <td><label for="name">Name:</label></td>
+                    <td><input type="text" id="name" name="name" placeholder="Your Name" required><br><br></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" name="email" placeholder="email@gmail.com" required><br><br></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Passwoord:</label></td>
+                    <td><input type="password" id="password" name="password" placeholder="password" required></td>
+                </tr>
+                <tr>
+                    <td><label for="phone">Phone Number:</label></td>
+                    <td><input type="tel" id="phone" name="phone" placeholder="+91 1234567890" required><br><br></td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Your Gender:</label></td>
+                    <td>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                        <input type="radio" id="Nsay" name="gender" value="Nsay">
+                        <label for="Nsay">Prefer not to say</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="age">Your Age:</label></td>
+                    <td><input type="number" id="age" name="age" placeholder="Your Age" required><br><br></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="travel">Where do you want to go?</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="delhi" name="travel" value="delhi">
+                        <label for="delhi">Delhi</label>
+                        <input type="checkbox" id="mumbai" name="travel" value="mumbai">
+                        <label for="mumbai">Mumbai</label>
+                        <input type="checkbox" id="bangalore" name="travel" value="bangalore">
+                        <label for="bangalore">Bangalore</label>
+                        <input type="checkbox" id="kolkata" name="travel" value="kolkata">
+                        <label for="kolkata">Kolkata</label><br><br>
+                    </td>
+                <tr>
+                    <td>
+                        <label for="address">Enter your address:</label>
+                    </td>
+                    <td>
+                        <textarea name="address" id="address" cols="25" rows="3" placeholder="Your Address"></textarea><br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Date of Travel">Date of Travel:</label>
+                    </td>
+                    <td>
+                        <input type="date" id="Date of Travel" name="Date of Travel" required><br><br>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="file">Upload Your ID:</label>
+                    </td>
+                    <td>
+                        <input type="file" id="file" name="file" required><br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <p>Thanks for submitting your form. We are happy to see you joining us for the travel. Go Back To <a href="/HomePage.html">HomePage</a>.</p>
+                    </td>
+                </tr>
+                </table>
+            </form>
+        </fieldset>
+    </div>
+    
+</body>
+</html>
