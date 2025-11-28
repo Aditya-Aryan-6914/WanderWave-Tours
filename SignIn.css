@@ -6,7 +6,8 @@
 }
 
 body{
-    background-image: url("/images/pexels-pixabay-259915.jpg");
+    /* Use a relative path so the image loads when served from the project root */
+    background-image: url("images/pexels-pixabay-259915.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
