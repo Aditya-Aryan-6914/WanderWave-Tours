@@ -1,4 +1,5 @@
 . Basic theme matching SignIn.css (background photo + soft white panels)
+h/* Basic theme matching SignIn.css (background photo + soft white panels) */
 :root{
   --accent:#0B6973; /* deep teal */
   --accent-2:#FF7A59; /* warm coral */
@@ -17,13 +18,18 @@ body{
   background: linear-gradient(180deg, var(--bg-dark-1), var(--bg-dark-2));
   background-attachment: fixed;
   -webkit-font-smoothing:antialiased;
-    --text-light:#FFFFFF; /* bright white for best contrast */
 }
-.page-fade-in{opacity:1}
-.page-fade-out{opacity:0}
+
+/* small utility fixes and nav styling */
+.page-fade-in{opacity:1;transition:opacity .45s ease}
+.page-fade-out{opacity:0;transition:opacity .45s ease}
 
 .container{max-width:1100px;margin:0 auto;padding:0 18px}
 
+.main-nav a{color:rgba(255,255,255,0.95);margin-left:18px;text-decoration:none;font-weight:600}
+.main-nav a.btn{padding:8px 12px;border-radius:6px}
+.main-nav a:hover{opacity:0.95}
+}
 .site-header{backdrop-filter: blur(6px);position:sticky;top:0;z-index:40;background:linear-gradient(180deg, rgba(2,6,10,0.9), rgba(4,10,16,0.95));box-shadow:0 6px 20px rgba(0,0,0,0.6)}
 .header-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
 .brand{font-size:26px;font-weight:700;color:var(--text-light);text-shadow:0 3px 18px rgba(0,0,0,0.7)}
