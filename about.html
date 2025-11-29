@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — WanderWave Tours</title>
+  <link rel="stylesheet" href="HomePage.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">Wander<span>Wave</span></div>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="login.html" class="btn">Login</a>
+        <a href="SignIn.html" class="btn sign-in">Sign Up</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-slider" style="height:40vh;min-height:220px;">
+      <div class="slide slide-2">
+        <div class="overlay"></div>
+        <div class="slide-content container">
+          <h1>About WanderWave</h1>
+          <p style="color:var(--muted);max-width:700px">We design thoughtful, small-group trips that connect you to local communities and unforgettable moments. Our team curates every route with sustainability and experience-forward thinking.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="features container" style="margin-top:18px;">
+      <h2>Our Mission</h2>
+      <div class="cards">
+        <div class="card">
+          <div class="card-visual" style="background-image:url('images/image1.png');background-size:cover;background-position:center"></div>
+          <h3>Sustainable Travel</h3>
+          <p style="color:var(--muted)">We partner with local operators and keep group sizes small to reduce impact.</p>
+        </div>
+        <div class="card">
+          <div class="card-visual" style="background-image:url('images/image2.png');background-size:cover;background-position:center"></div>
+          <h3>Local Guides</h3>
+          <p style="color:var(--muted)">Our guides are locals who know the places and stories intimately.</p>
+        </div>
+        <div class="card">
+          <div class="card-visual" style="background-image:url('images/image3.png');background-size:cover;background-position:center"></div>
+          <h3>Handpicked Routes</h3>
+          <p style="color:var(--muted)">Every trip is tested and refined for pace, comfort and discovery.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container features" style="margin-top:18px;">
+      <h2>Meet The Team</h2>
+      <div class="cards">
+        <div class="card">
+          <div class="card-visual" style="background-image:url('images/image4.png');background-size:cover;background-position:center"></div>
+          <h3>Ana — Founder</h3>
+          <p style="color:var(--muted)">Ana built WanderWave to combine community-first travel and meaningful itineraries.</p>
+        </div>
+        <div class="card">
+          <div class="card-visual" style="background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01))"></div>
+          <h3>Ravi — Operations</h3>
+          <p style="color:var(--muted)">Ravi coordinates on-the-ground logistics and partner relationships.</p>
+        </div>
+        <div class="card">
+          <div class="card-visual" style="background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01))"></div>
+          <h3>Leah — Experience Lead</h3>
+          <p style="color:var(--muted)">Leah curates the cultural encounters and local experiences on our tours.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="foot-left">
+        <div class="brand small">Wander<span>Wave</span></div>
+      </div>
+      <div class="foot-right">
+        <h4>Contact</h4>
+        <p>Email: hello@wanderwave.example</p>
+      </div>
+    </div>
+    <div class="legal">© <span id="year"></span> WanderWave Tours</div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

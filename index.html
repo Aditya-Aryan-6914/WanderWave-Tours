@@ -9,13 +9,13 @@
 </head>
 <body class="page-fade-in">
     <header class="site-header">
-        <div class="container header-inner">
+            <div class="container header-inner">
             <div class="brand">Wander<span>Wave</span></div>
             <nav class="main-nav">
                 <a href="#">Home</a>
                 <a href="#destinations">Destinations</a>
                 <a href="#tours">Tours</a>
-                <a href="#about">About</a>
+                <a href="about.html">About</a>
                 <a href="login.html" class="btn fade-link">Login</a>
                 <a href="SignIn.html" class="btn sign-in fade-link">Sign Up</a>
             </nav>
@@ -60,6 +60,38 @@
                         <a href="SignIn.html" class="cta btn fade-link">Explore Tours</a>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- Contact / Get in touch -->
+        <section id="contact" class="contact container">
+            <h2>Contact Us</h2>
+            <div class="form-wrap">
+                <form id="contactForm" action="#" method="post">
+                    <div class="field">
+                        <label for="name">Your name</label>
+                        <input id="name" name="name" type="text" placeholder="Full name" required />
+                    </div>
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" placeholder="you@example.com" required />
+                    </div>
+                    <div class="field">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="How can we help?" required></textarea>
+                    </div>
+                    <div class="form-actions">
+                        <button class="cta" type="submit">Send Message</button>
+                        <button class="btn secondary" type="reset">Reset</button>
+                    </div>
+                </form>
+
+                <aside style="width:320px;min-width:240px;color:var(--muted);">
+                    <h3>Reach out</h3>
+                    <p>Prefer phone? Call us at <strong>+91 12345 67890</strong></p>
+                    <p>Or email: <a href="mailto:hello@wanderwave.example">hello@wanderwave.example</a></p>
+                    <p style="margin-top:12px;color:var(--muted);">We aim to respond within 24 hours. For urgent booking help, call us.</p>
+                </aside>
             </div>
         </section>
 
